@@ -1,0 +1,422 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{caption}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black,
+    pdfborder={0 0 0}
+}
+
+% Page setup
+\geometry{margin=1in, top=1.2in, bottom=1in}
+\pagestyle{fancy}
+
+% Define colors
+\definecolor{uptrendblue}{RGB}{0,102,204}
+\definecolor{uptrendgray}{RGB}{128,128,128}
+\definecolor{lightgray}{RGB}{245,245,245}
+\definecolor{darkblue}{RGB}{0,51,102}
+
+% Header and footer
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=0.8cm]{uptrend_logo.png}}
+\fancyhead[R]{\textcolor{uptrendblue}{\textbf{Uptrend Business Organization}}}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\textcolor{uptrendgray}{\small Generated: \today}}
+
+% Title formatting
+\titleformat{\section}{\large\bfseries\color{darkblue}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{uptrendblue}}{\thesubsection}{1em}{}
+
+% Custom commands
+\newcommand{\creditrating}[1]{\textbf{\textcolor{uptrendblue}{#1}}}
+\newcommand{\highlight}[1]{\colorbox{lightgray}{\textbf{#1}}}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    % Logo
+    \includegraphics[width=0.3\textwidth]{uptrend_logo.png}\\[1cm]
+    
+    {\huge\textbf{\textcolor{darkblue}{BUSINESS CREDIT REPORT}}}\\[0.5cm]
+    
+    {\Large\textcolor{uptrendblue}{Comprehensive Financial Analysis}}\\[2cm]
+    
+    % Company name box
+    \fcolorbox{uptrendblue}{lightgray}{%
+        \begin{minipage}{0.8\textwidth}
+            \centering
+            {\LARGE\textbf{UNLOCK2GO INC}} \\[0.3cm]
+            {\large Company Registration: P10000004543}\\
+            {\large NAICS: 517312 - WIRELESS TELECOMMUNICATIONS CARRIERS (EXCEPT SATELLITE)}
+        \end{minipage}
+    }
+    
+    \vspace{2cm}
+    
+    % Mascot
+    \includegraphics[width=0.2\textwidth]{uptrend_mascot.png}\\[1cm]
+    
+    {\large\textcolor{uptrendgray}{Report Generated: 8/11/2025}}\\[0.3cm]
+    {\large\textcolor{uptrendgray}{Correlation ID: 057ebc94-7152-4127-82b6-6f6031f87d21}}
+    
+    \vfill
+    
+    {\textcolor{uptrendblue}{\textbf{Uptrend Business Organization}}}\\
+    {\small Professional Credit Analysis & Risk Assessment}
+    
+\end{titlepage}
+
+\newpage
+
+% Executive Summary
+\section*{EXECUTIVE SUMMARY}
+
+\begin{tabular}{|p{3cm}|p{12cm}|}
+\hline
+\rowcolor{lightgray}
+\textbf{Company} & UNLOCK2GO INC \\
+\hline
+\textbf{Status} & Active \\
+\hline
+\textbf{Credit Rating} & \creditrating{C - Moderate Risk (Score: 50)} \\
+\hline
+\textbf{Credit Limit} & \$5,000 USD \\
+\hline
+\textbf{Annual Revenue} & \$635,000 USD \\
+\hline
+\textbf{Years in Business} & N/A \\
+\hline
+\textbf{Industry} & RADIOTELEPHONE COMMUNICATION \\
+\hline
+\textbf{Employees} & 1 \\
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\highlight{Key Highlights:}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Credit limit increased from \$1,000 to \$5,000 (Positive development)
+    \item N/A of business operation demonstrates stability
+    \item No bankruptcy, liens, or legal filings recorded
+    \item Payment history shows 100\% on-time payments for recorded transactions
+\end{itemize}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+% Company Summary
+\section{COMPANY SUMMARY}
+
+\subsection{Basic Information}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{COMPANY IDENTIFICATION}} \\
+\hline
+Business Name & UNLOCK2GO INC \\
+\hline
+Company Number & US114067217 \\
+\hline
+Registration Number & P10000004543 \\
+\hline
+Country & US \\
+\hline
+Legal Form & Incorporated \\
+\hline
+Status & \textcolor{green}{\textbf{Active}} \\
+\hline
+Operations Start Date & 2010-01-15 \\
+\hline
+\end{tabularx}
+
+\subsection{Industry Classification}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{BUSINESS ACTIVITY}} \\
+\hline
+Primary Activity & RADIOTELEPHONE COMMUNICATION \\
+\hline
+SIC Code & 4812 - COMMUNICATIONS \\
+\hline
+NAICS Code & 517312 - WIRELESS TELECOMMUNICATIONS CARRIERS (EXCEPT SATELLITE) \\
+\hline
+Industry Sector & E - TRANSPORTATION \& PUBLIC UTILITIES \\
+\hline
+\end{tabularx}
+
+% Credit Score Section
+\section{CREDIT ASSESSMENT}
+
+\subsection{Current Credit Rating}
+\begin{center}
+\begin{tikzpicture}
+    \draw[thick, uptrendblue] (0,0) rectangle (8,3);
+    \node at (4,2.3) {\huge\textbf{C}};
+    \node at (4,1.7) {\Large\textbf{Moderate Risk}};
+    \node at (4,1.2) {Credit Score: 50/100};
+    \node at (4,0.7) {Credit Limit: \$5,000};
+    \node at (4,0.3) {Last Updated: 2023-07-09};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Credit History}
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\rowcolor{lightgray}
+\textbf{Date} & \textbf{Rating} & \textbf{Description} \\
+\hline
+Current & C (50) & Moderate Risk - \$5,000 Credit Limit \\
+\hline
+Previous & E & Insufficient information to score - \$1,000 Credit Limit \\
+\hline
+Change Date & 2023-07-09 & Positive upgrade from unrated status \\
+\hline
+\end{tabularx}
+
+\subsection{Performance Percentiles}
+\begin{itemize}
+    \item \textbf{US National Percentile:} 67.975\% (Above average)
+    \item \textbf{Industry Percentile:} 67.095\% (Above industry average)
+\end{itemize}
+
+% Contact Information
+\section{CONTACT INFORMATION}
+
+\subsection{Primary Address}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{BUSINESS ADDRESS}} \\
+\hline
+Street Address & 10214 NW 47TH ST \\
+\hline
+City & SUNRISE \\
+\hline
+State & FL \\
+\hline
+Postal Code & 33351 \\
+\hline
+Country & US \\
+\hline
+\end{tabularx}
+
+\subsection{Digital Presence}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+Website & UNLOCK2GO.COM \\
+\hline
+\end{tabularx}
+
+% Directors and Management
+\section{DIRECTORS AND MANAGEMENT}
+
+\subsection{Current Directors}
+\begin{longtable}{|p{3cm}|p{4cm}|p{7cm}|}
+\hline
+\rowcolor{lightgray}
+\textbf{Name} & \textbf{Position} & \textbf{Address} \\
+\hline
+\endhead
+DANIEL HELLED & PRESIDENT & 13416 NW 6TH DR, PLANTATION, FL, 33325 \\
+\hline
+DANIEL HELLED & PRESIDENT & 5862 SW 88TH TER, COOPER CITY, FL, 33328 \\
+\hline
+
+\end{longtable}
+
+\textit{Note: The same individual appears to hold multiple presidential positions at different registered addresses.}
+
+% Financial Information
+\section{FINANCIAL INFORMATION}
+
+\subsection{Revenue and Turnover}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{FINANCIAL OVERVIEW}} \\
+\hline
+Latest Turnover & \$635,000 USD \\
+\hline
+Sales Range & \$500,000 to \$999,999 \\
+\hline
+Estimated Employees & 1 \\
+\hline
+Years in Business & N/A \\
+\hline
+\end{tabularx}
+
+\subsection{Payment Performance}
+\begin{tabularx}{\textwidth}{|l|l|l|}
+\hline
+\rowcolor{lightgray}
+\textbf{Metric} & \textbf{Value} & \textbf{Performance} \\
+\hline
+On-Time Payments & 3 invoices & 100\% \\
+\hline
+Late Payments & N/A invoices & N/A\% \\
+\hline
+Total Value Paid & \$300 & All on-time \\
+\hline
+Payment Rating & Excellent & No delays recorded \\
+\hline
+\end{tabularx}
+
+% Industry Payment Trends
+\subsection{Days Beyond Terms (DBT) History}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    title={Industry DBT Trends (2024-2025)},
+    xlabel={Month},
+    ylabel={Days Beyond Terms},
+    width=12cm,
+    height=6cm,
+    grid=major,
+    legend pos=north west,
+    xtick=data,
+    xticklabels={{Aug 24}, {Sep 24}, {Oct 24}, {Nov 24}, {Dec 24}, {Jan 25}, {Feb 25}, {Mar 25}, {Apr 25}, {May 25}, {Jun 25}},
+    x tick label style={rotate=45, anchor=east}
+]
+\addplot[color=uptrendblue, mark=square, line width=2pt] coordinates {
+    (1, 21.16) (2, 21.63) (3, 22.1) (4, 23.85) (5, 15.62) (6, 15.58) (7, 15.61) (8, 14.6) (9, 14.59) (10, 14.64) (11, 14.19) 
+};
+\legend{Industry Average}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+% Risk Assessment
+\section{RISK ASSESSMENT}
+
+\subsection{Negative Information}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{LEGAL AND FINANCIAL ISSUES}} \\
+\hline
+Bankruptcy & \textcolor{green}{\textbf{None}} \\
+\hline
+Tax Lien Filings & N/A \\
+\hline
+Judgment Filings & N/A \\
+\hline
+UCC Filings & N/A \\
+\hline
+Legal Suits & N/A \\
+\hline
+OFAC Status & Not flagged \\
+\hline
+Total Legal Amount & \$N/A \\
+\hline
+\end{tabularx}
+
+\subsection{Positive Indicators}
+\begin{itemize}[leftmargin=0.5cm]
+    \item \textbf{Clean Legal Record:} No bankruptcies, liens, or judgments
+    \item \textbf{Credit Improvement:} Credit limit increased 5x from \$1,000 to \$5,000
+    \item \textbf{Payment History:} 100\% on-time payment record
+    \item \textbf{Business Longevity:} N/A of continuous operation
+    \item \textbf{Industry Performance:} Above average percentile rankings
+\end{itemize}
+
+\subsection{Areas of Concern}
+\begin{itemize}[leftmargin=0.5cm]
+    \item \textbf{Limited Trade Data:} Minimal trade reference information available
+    \item \textbf{Small Operation:} Single employee business structure
+    \item \textbf{Address Changes:} Multiple registered addresses over time
+    \item \textbf{Non-profit Status:} Listed as non-profit despite commercial activity
+\end{itemize}
+
+% Additional Information
+\section{ADDITIONAL INFORMATION}
+
+\subsection{Corporate Records}
+The company shows multiple filing records with status changes:
+\begin{itemize}
+    \item \textbf{Active Records:} Current operations at primary address
+    \item \textbf{Inactive Records:} Previous filings dated September 22, 2023
+    \item \textbf{Incorporation:} Florida domestic corporation since 2010
+\end{itemize}
+
+\subsection{Address History}
+Historical addresses on file:
+\begin{enumerate}
+    1. 5862 SW 88TH TER,COOPER CITY,FL,33328
+2. 13416 NW 6TH DR,PLANTATION,FL,33325
+3. 11430 NW 29TH MNR,SUNRISE,FL,33323
+4. 10206 NW 47TH ST,SUNRISE,FL,33351
+5. 10214 NW 47TH ST,SUNRISE,FL,33351
+
+\end{enumerate}
+
+% Recommendations
+\section{RECOMMENDATIONS}
+
+\subsection{Credit Decision Factors}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{lightgray}
+\textbf{Factor} & \textbf{Assessment} \\
+\hline
+Business Stability & \textcolor{green}{\textbf{Positive}} - N/A operation \\
+\hline
+Payment History & \textcolor{green}{\textbf{Excellent}} - 100\% on-time \\
+\hline
+Legal Standing & \textcolor{green}{\textbf{Clean}} - No adverse records \\
+\hline
+Credit Trend & \textcolor{green}{\textbf{Improving}} - Rating upgraded \\
+\hline
+Trade References & \textcolor{orange}{\textbf{Limited}} - Minimal data \\
+\hline
+\end{tabularx}
+
+\subsection{Suggested Credit Terms}
+\begin{itemize}
+    \item \textbf{Recommended Credit Limit:} \$3,000 - \$5,000
+    \item \textbf{Payment Terms:} Net 30 days
+    \item \textbf{Monitoring:} Quarterly review recommended
+    \item \textbf{Security:} Consider personal guarantee for larger amounts
+\end{itemize}
+
+% Footer Information
+\vfill
+\begin{center}
+\hrule
+\vspace{0.3cm}
+\includegraphics[height=1cm]{uptrend_mascot.png}\\[0.2cm]
+\textcolor{uptrendblue}{\textbf{Uptrend Business Organization}}\\
+\textcolor{uptrendgray}{\small This report is confidential and prepared for authorized users only}\\
+\textcolor{uptrendgray}{\small Report Date: \today}
+\end{center}
+
+\end{document}
