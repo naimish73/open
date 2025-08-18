@@ -30,7 +30,7 @@
 
 % Page setup
 \geometry{margin=1in, top=1.2in, bottom=1in}
-\setlength{\headheight}{20pt}
+\setlength{\headheight}{25pt}
 \pagestyle{fancy}
 
 % Define colors
@@ -40,7 +40,7 @@
 \definecolor{darkblue}{RGB}{0,51,102}
 
 % pgfplots compatibility
-\pgfplotsset{compat=1.18}
+\pgfplotsset{compat=1.14}
 
 % Header and footer
 \fancyhf{}
@@ -75,7 +75,7 @@
     \fcolorbox{uptrendblue}{lightgray}{%
         \begin{minipage}{0.8\textwidth}
             \centering
-            {\LARGE\textbf{UNLOCK2GO INC}} \\[0.3cm]
+            {\LARGE\textbf{UNLOCK2GO INC}}\\[0.3cm]
             {\large Company Registration: P10000004543}\\
             {\large NAICS: 517312 - WIRELESS TELECOMMUNICATIONS CARRIERS (EXCEPT SATELLITE)}
         \end{minipage}
@@ -87,7 +87,7 @@
     \includegraphics[width=0.2\textwidth]{uptrend_mascot.png}\\[1cm]
     
     {\large\textcolor{uptrendgray}{Report Generated: 8/18/2025}}\\[0.3cm]
-    {\large\textcolor{uptrendgray}{Correlation ID: fa28252f-7cba-4f19-8a1e-025b1bbda7f7}}
+    {\large\textcolor{uptrendgray}{Correlation ID: 2429ad2d-c5ed-4deb-8531-99b058247a77}}
     
     \vfill
     
@@ -101,7 +101,7 @@
 % Executive Summary
 \section*{EXECUTIVE SUMMARY}
 
-\begin{tabular}{|p{3cm}|p{12cm}|}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{3.5cm}|>{\raggedright\arraybackslash}p{11.5cm}|}
 \hline
 \rowcolor{lightgray}
 \textbf{Company} & UNLOCK2GO INC \\
@@ -142,7 +142,7 @@
 \section{COMPANY SUMMARY}
 
 \subsection{Basic Information}
-\begin{tabularx}{\textwidth}{|l|X|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{COMPANY IDENTIFICATION}} \\
@@ -164,7 +164,7 @@ Operations Start Date & 2010-01-15 \\
 \end{tabularx}
 
 \subsection{Industry Classification}
-\begin{tabularx}{\textwidth}{|l|X|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{BUSINESS ACTIVITY}} \\
@@ -195,7 +195,7 @@ Industry Sector & E - TRANSPORTATION \& PUBLIC UTILITIES \\
 \end{center}
 
 \subsection{Credit History}
-\begin{tabularx}{\textwidth}{|l|l|X|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}X|}
 \hline
 \rowcolor{lightgray}
 \textbf{Date} & \textbf{Rating} & \textbf{Description} \\
@@ -218,7 +218,7 @@ Change Date & 2023-07-09 & Positive upgrade from unrated status \\
 \section{CONTACT INFORMATION}
 
 \subsection{Primary Address}
-\begin{tabularx}{\textwidth}{|l|X|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{BUSINESS ADDRESS}} \\
@@ -236,7 +236,7 @@ Country & US \\
 \end{tabularx}
 
 \subsection{Digital Presence}
-\begin{tabularx}{\textwidth}{|l|X|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
 \hline
 Website & UNLOCK2GO.COM \\
 \hline
@@ -246,7 +246,7 @@ Website & UNLOCK2GO.COM \\
 \section{DIRECTORS AND MANAGEMENT}
 
 \subsection{Current Directors}
-\begin{longtable}{|p{3cm}|p{4cm}|p{7cm}|}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}p{7cm}|}
 \hline
 \rowcolor{lightgray}
 \textbf{Name} & \textbf{Position} & \textbf{Address} \\
@@ -265,7 +265,7 @@ DANIEL HELLED & PRESIDENT & 5862 SW 88TH TER, COOPER CITY, FL, 33328 \\
 \section{FINANCIAL INFORMATION}
 
 \subsection{Revenue and Turnover}
-\begin{tabularx}{\textwidth}{|l|X|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{FINANCIAL OVERVIEW}} \\
@@ -281,7 +281,7 @@ Years in Business & N/A \\
 \end{tabularx}
 
 \subsection{Payment Performance}
-\begin{tabularx}{\textwidth}{|l|l|l|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
 \hline
 \rowcolor{lightgray}
 \textbf{Metric} & \textbf{Value} & \textbf{Performance} \\
@@ -324,7 +324,7 @@ Payment Rating & Excellent & No delays recorded \\
 \section{RISK ASSESSMENT}
 
 \subsection{Negative Information}
-\begin{tabularx}{\textwidth}{|l|X|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{LEGAL AND FINANCIAL ISSUES}} \\
@@ -388,7 +388,7 @@ Historical addresses on file:
 \section{RECOMMENDATIONS}
 
 \subsection{Credit Decision Factors}
-\begin{tabularx}{\textwidth}{|l|X|}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
 \hline
 \rowcolor{lightgray}
 \textbf{Factor} & \textbf{Assessment} \\
