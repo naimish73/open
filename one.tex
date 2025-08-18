@@ -5,6 +5,7 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{colortbl}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
 \usepackage{booktabs}
@@ -29,6 +30,7 @@
 
 % Page setup
 \geometry{margin=1in, top=1.2in, bottom=1in}
+\setlength{\headheight}{20pt}
 \pagestyle{fancy}
 
 % Define colors
@@ -36,6 +38,9 @@
 \definecolor{uptrendgray}{RGB}{128,128,128}
 \definecolor{lightgray}{RGB}{245,245,245}
 \definecolor{darkblue}{RGB}{0,51,102}
+
+% pgfplots compatibility
+\pgfplotsset{compat=1.18}
 
 % Header and footer
 \fancyhf{}
@@ -81,13 +86,13 @@
     % Mascot
     \includegraphics[width=0.2\textwidth]{uptrend_mascot.png}\\[1cm]
     
-    {\large\textcolor{uptrendgray}{Report Generated: 8/11/2025}}\\[0.3cm]
-    {\large\textcolor{uptrendgray}{Correlation ID: 057ebc94-7152-4127-82b6-6f6031f87d21}}
+    {\large\textcolor{uptrendgray}{Report Generated: 8/18/2025}}\\[0.3cm]
+    {\large\textcolor{uptrendgray}{Correlation ID: d39a8211-8e98-4f48-b300-16352a1dfad6}}
     
     \vfill
     
     {\textcolor{uptrendblue}{\textbf{Uptrend Business Organization}}}\\
-    {\small Professional Credit Analysis & Risk Assessment}
+    {\small Professional Credit Analysis \& Risk Assessment}
     
 \end{titlepage}
 
@@ -205,8 +210,8 @@ Change Date & 2023-07-09 & Positive upgrade from unrated status \\
 
 \subsection{Performance Percentiles}
 \begin{itemize}
-    \item \textbf{US National Percentile:} 67.975\% (Above average)
-    \item \textbf{Industry Percentile:} 67.095\% (Above industry average)
+    \item \textbf{US National Percentile:} 68.006\% (Above average)
+    \item \textbf{Industry Percentile:} 67.129\% (Above industry average)
 \end{itemize}
 
 % Contact Information
@@ -308,7 +313,7 @@ Payment Rating & Excellent & No delays recorded \\
     x tick label style={rotate=45, anchor=east}
 ]
 \addplot[color=uptrendblue, mark=square, line width=2pt] coordinates {
-    (1, 21.16) (2, 21.63) (3, 22.1) (4, 23.85) (5, 15.62) (6, 15.58) (7, 15.61) (8, 14.6) (9, 14.59) (10, 14.64) (11, 14.19) 
+    (1, 21.15) (2, 21.61) (3, 22.09) (4, 23.83) (5, 15.6) (6, 15.57) (7, 15.68) (8, 14.66) (9, 14.62) (10, 14.51) (11, 13.66) 
 };
 \legend{Industry Average}
 \end{axis}
@@ -371,11 +376,11 @@ The company shows multiple filing records with status changes:
 \subsection{Address History}
 Historical addresses on file:
 \begin{enumerate}
-    1. 5862 SW 88TH TER,COOPER CITY,FL,33328
-2. 13416 NW 6TH DR,PLANTATION,FL,33325
-3. 11430 NW 29TH MNR,SUNRISE,FL,33323
-4. 10206 NW 47TH ST,SUNRISE,FL,33351
-5. 10214 NW 47TH ST,SUNRISE,FL,33351
+    \item 5862 SW 88TH TER,COOPER CITY,FL,33328
+\item 13416 NW 6TH DR,PLANTATION,FL,33325
+\item 11430 NW 29TH MNR,SUNRISE,FL,33323
+\item 10206 NW 47TH ST,SUNRISE,FL,33351
+\item 10214 NW 47TH ST,SUNRISE,FL,33351
 
 \end{enumerate}
 
